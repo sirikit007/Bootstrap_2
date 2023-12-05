@@ -3,9 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Website with Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header id="header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(22, 22, 54);">
+        <div class="container">
+            <a href="#" class="navbar-brand">My Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav mb-3 mb-lg-0 me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu" aria-labelledby="navDrop">
+                            <li><a href="" class="dropdown-item">Drop1</a></li>
+                            <li><a href="" class="dropdown-item">Drop2</a></li>
+                            <li><a href="" class="dropdown-item">Drop3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form action="#" class="d-flex">
+                    <input type="search" placeholder="Search" class="form-control me-2">
+                    <button type="submit" class="btn btn-outline-dark">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-8">
+                <h1>My Logo</h1>
+                <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, delectus!</h2>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#ffc451" class="bi bi-cassette-fill" viewBox="0 0 16 16">
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3h10.382Z"/>
+                    </svg>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                </div>
+            </div>
+        
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"  fill="#ffc451" class="bi bi-cassette-fill" viewBox="0 0 16 16">
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3h10.382Z"/>
+                    </svg>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"  fill="#ffc451" class="bi bi-cassette-fill" viewBox="0 0 16 16">
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3h10.382Z"/>
+                    </svg>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em"  fill="#ffc451" class="bi bi-cassette-fill" viewBox="0 0 16 16">
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3h10.382Z"/>
+                    </svg>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#ffc451" class="bi bi-cassette-fill" viewBox="0 0 16 16">
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3h10.382Z"/>
+                    </svg>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4 col-6">
+                <div class="icon-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" fill="#ffc451" class="bi bi-cassette-fill" viewBox="0 0 16 16">
+                        <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h.191l1.862-3.724A.5.5 0 0 1 4 10h8a.5.5 0 0 1 .447.276L14.31 14h.191a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zM4 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2m8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2M6 6a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2H7a1 1 0 0 1-1-1"/>
+                        <path d="m13.191 14-1.5-3H4.309l-1.5 3h10.382Z"/>
+                    </svg>
+                    <h3><a href="#">Lorem Ipsum</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about my-5" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img class="img-fluid" src="https://images.pexels.com/photos/18686440/pexels-photo-18686440/free-photo-of-dramatic-sky-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 content">
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, numquam.</h3>
+                <p class="fst-italic">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, harum perferendis. Quam earum debitis doloremque fuga consectetur quisquam ducimus asperiores atque eaque.
+                </p>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=#ffc451 class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                        </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, a.
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=#ffc451 class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                        </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, a Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta temporibus deleniti aliquid?
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=#ffc451 class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                        </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, a. Lorem ipsum dolor sit.
+                    </li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill=#ffc451 class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                        </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, tenetur?
+                    </li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus doloribus itaque recusandae, sit rerum perspiciatis harum, vero sapiente repellat exercitationem voluptas nulla animi illum inventore cumque iste culpa ut a.</p>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta mb-5">
+    <div class="container text-center">
+        <h3>Get in touch</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore repellendus eaque blanditiis earum quam magni nulla error reiciendis ipsum labore!</p>
+        <a href="" class="cta-btn">Get in touch</a>
+    </div>
+</section>
     
 </body>
 </html>

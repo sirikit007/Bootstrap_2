@@ -1,0 +1,101 @@
+
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: bisque;
+}
+
+.btn-outline-dark {
+    color: #fff;   
+    border-color: #fff;
+}
+.btn-outline-dark:hover {
+    color: bisque;
+    border-color: #fff;
+}
+#hero {
+    width: 100%;
+    height: 100vh;  
+    background: url(https://images.pexels.com/photos/3879060/pexels-photo-3879060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    
+    background-size: cover;
+    position: relative;     
+}
+
+#hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+}
+#hero .container {
+    position: relative;
+    padding-top: 75px;
+}
+#hero h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+#hero h2 {
+    color: #fff;
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+#hero .icon-box h3 {
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 26px;
+}
+#hero .icon-box h3 a {
+    color: #fff;
+
+}
+#hero .icon-box h3 a:hover {
+    color: #ffc451;
+}
+.icon-box  {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+    text-align: center;
+}
+.icon-box:hover {
+    border-color: #ffc451;
+}
+.about ul li {
+    list-style-type: none;
+}
+.cta {
+    background: linear-gradient(rgba(2,2,2,0.5), rgba(2,2,2,0.8)), url(https://images.pexels.com/photos/19215458/pexels-photo-19215458/free-photo-of-back-lit-photograph-of-birch-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed center center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+.cta h3 {
+    font-weight: 700;
+    font-style: 28px;
+}
+.cta-btn {
+    font-weight: 600;
+    font-style: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 10px;
+}
+.cta-btn:hover {
+    background: #ffc451;
+    border-color: #ffc451;
+    color: #151515;
+}
