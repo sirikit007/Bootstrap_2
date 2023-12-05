@@ -99,3 +99,9 @@
     border-color: #ffc451;
     color: #151515;
 }
+.carousel-indicators {
+    bottom: -80px;
+}
+.carousel-indicators button {
+    background-color: #151515 !important;
+}
